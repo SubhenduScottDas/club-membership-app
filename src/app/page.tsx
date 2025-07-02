@@ -33,7 +33,7 @@ export default function Home() {
           alt="Logo"
           className={`transition-all duration-2000 ease-in-out 
             absolute z-60 object-contain
-            ${animate ? 'top-6 left-1/2 w50 h-24 -translate-x-1/2' : 'w-72 h-72 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'}
+            ${animate ? 'top-6 left-1/2 w-70 h-24 -translate-x-1/2' : 'w-72 h-72 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'}
           `}
         />
       </div>

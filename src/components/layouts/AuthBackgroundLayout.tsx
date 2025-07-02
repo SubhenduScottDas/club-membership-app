@@ -23,7 +23,7 @@ export default function AuthBackgroundLayout({
                 <img
                     src="/ABSCRedLogo.png"
                     alt="Logo"
-                    className="absolute top-6 left-1/2 z-20 w50 h-24 -translate-x-1/2 object-contain drop-shadow-[0_0_15px_rgba(255,0,0,0.5)] brightness-110"
+                    className="absolute top-6 left-1/2 z-20 w-70 h-24 -translate-x-1/2 object-contain drop-shadow-[0_0_15px_rgba(255,0,0,0.5)] brightness-110"
                 />
             )}
 
