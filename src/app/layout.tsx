@@ -10,8 +10,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
-        <nav className="p-4 border-b flex justify-between items-center">
-          <Link href="/" className="font-bold text-lg text-red-800">Gooner Adda</Link>
+        <nav className="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md text-red-700 px-6 py-4 flex justify-between items-center shadow-sm">
+          <Link href="/" className="font-bold text-lg hover:underline">Gooner Adda</Link>
           <div className="space-x-4 text-sm">
             <Link href="/login" className="hover:underline">Login</Link>
             <Link href="/register" className="hover:underline">Register</Link>
