@@ -3,9 +3,11 @@ import { ReactNode } from "react";
 export default function AuthBackgroundLayout({
     children,
     showContainer = true,
+    showLogo = true,
 }: {
     children: ReactNode;
     showContainer?: boolean;
+    showLogo?: boolean;
 }) {
     return (
         <div className="relative h-screen w-screen overflow-hidden">
@@ -14,14 +16,16 @@ export default function AuthBackgroundLayout({
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{ backgroundImage: "url('/bg.jpg')" }}
             />
-            <div className="absolute inset-0 z-10 bg-red-950/60" />
+            <div className="absolute inset-0 z-10 bg-stone-800/80" />
 
-            {/* Glowing logo pinned to top */}
-            <img
-                src="/ABSCRedLogo.png"
-                alt="Logo"
-                className="absolute top-6 left-1/2 z-20 w-48 h-24 -translate-x-1/2 object-contain drop-shadow-[0_0_15px_rgba(255,0,0,0.8)] brightness-110"
-            />
+            {/* Conditionally render logo */}
+            {showLogo && (
+                <img
+                    src="/ABSCRedLogo.png"
+                    alt="Logo"
+                    className="absolute top-6 left-1/2 z-20 w50 h-24 -translate-x-1/2 object-contain drop-shadow-[0_0_15px_rgba(255,0,0,0.5)] brightness-110"
+                />
+            )}
 
             {/* Auth container centered */}
             <main className="relative z-20 flex h-full flex-col items-center justify-center">

@@ -26,14 +26,14 @@ export default function Home() {
   }, [router]);
 
   return (
-    <AuthBackgroundLayout showContainer={false}>
+    <AuthBackgroundLayout showContainer={false} showLogo={false}>
       <div className="relative flex h-screen w-full items-center justify-center">
         <img
           src="/ABSCRedLogo.png"
           alt="Logo"
-          className={`transition-all duration-1000 ease-in-out 
-            absolute z-30 object-contain
-            ${animate ? 'top-6 left-1/2 w-48 h-24 -translate-x-1/2' : 'w-72 h-72 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'}
+          className={`transition-all duration-2000 ease-in-out 
+            absolute z-60 object-contain
+            ${animate ? 'top-6 left-1/2 w50 h-24 -translate-x-1/2' : 'w-72 h-72 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'}
           `}
         />
       </div>
